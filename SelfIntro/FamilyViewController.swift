@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FamilyViewController.swift
 //  SelfIntro
 //
 //  Created by Burnett, Jordan on 1/6/16.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ViewController : UIViewController
+class FamilyViewController : UIViewController
 {
     
-    @IBAction func toSchoolChange(sender: UIButton)
+    @IBAction func toFoodChange(sender: UIButton)
     {
-        performSegueWithIdentifier("toSchool", sender: sender)
+        performSegueWithIdentifier("toFood", sender: sender)
     }
     
     override func viewDidLoad()
@@ -27,6 +27,4 @@ class ViewController : UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
-

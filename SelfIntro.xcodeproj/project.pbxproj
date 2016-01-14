@@ -14,6 +14,10 @@
 		8339F99E1C3D6566009533C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8339F99C1C3D6566009533C9 /* LaunchScreen.storyboard */; };
 		8339F9A91C3D6566009533C9 /* SelfIntroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339F9A81C3D6566009533C9 /* SelfIntroTests.swift */; };
 		8339F9B41C3D6566009533C9 /* SelfIntroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339F9B31C3D6566009533C9 /* SelfIntroUITests.swift */; };
+		8339F9C31C3D65FF009533C9 /* FutureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339F9C21C3D65FF009533C9 /* FutureViewController.swift */; };
+		8339F9C51C3D666C009533C9 /* SchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339F9C41C3D666C009533C9 /* SchoolViewController.swift */; };
+		8339F9C71C3D67E8009533C9 /* HobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339F9C61C3D67E8009533C9 /* HobbiesViewController.swift */; };
+		8339F9C91C3D6B37009533C9 /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339F9C81C3D6B37009533C9 /* FamilyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		8339F9AF1C3D6566009533C9 /* SelfIntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfIntroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8339F9B31C3D6566009533C9 /* SelfIntroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroUITests.swift; sourceTree = "<group>"; };
 		8339F9B51C3D6566009533C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8339F9C21C3D65FF009533C9 /* FutureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FutureViewController.swift; path = ../FutureViewController.swift; sourceTree = "<group>"; };
+		8339F9C41C3D666C009533C9 /* SchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolViewController.swift; sourceTree = "<group>"; };
+		8339F9C61C3D67E8009533C9 /* HobbiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbiesViewController.swift; sourceTree = "<group>"; };
+		8339F9C81C3D6B37009533C9 /* FamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,7 @@
 		8339F9921C3D6566009533C9 /* SelfIntro */ = {
 			isa = PBXGroup;
 			children = (
-				8339F9931C3D6566009533C9 /* AppDelegate.swift */,
-				8339F9951C3D6566009533C9 /* ViewController.swift */,
+				8339F9C11C3D65A9009533C9 /* Controller */,
 				8339F9971C3D6566009533C9 /* Main.storyboard */,
 				8339F99A1C3D6566009533C9 /* Assets.xcassets */,
 				8339F99C1C3D6566009533C9 /* LaunchScreen.storyboard */,
@@ -123,6 +130,19 @@
 				8339F9B51C3D6566009533C9 /* Info.plist */,
 			);
 			path = SelfIntroUITests;
+			sourceTree = "<group>";
+		};
+		8339F9C11C3D65A9009533C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8339F9C21C3D65FF009533C9 /* FutureViewController.swift */,
+				8339F9931C3D6566009533C9 /* AppDelegate.swift */,
+				8339F9951C3D6566009533C9 /* ViewController.swift */,
+				8339F9C41C3D666C009533C9 /* SchoolViewController.swift */,
+				8339F9C61C3D67E8009533C9 /* HobbiesViewController.swift */,
+				8339F9C81C3D6B37009533C9 /* FamilyViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8339F9C91C3D6B37009533C9 /* FamilyViewController.swift in Sources */,
+				8339F9C51C3D666C009533C9 /* SchoolViewController.swift in Sources */,
 				8339F9961C3D6566009533C9 /* ViewController.swift in Sources */,
+				8339F9C31C3D65FF009533C9 /* FutureViewController.swift in Sources */,
 				8339F9941C3D6566009533C9 /* AppDelegate.swift in Sources */,
+				8339F9C71C3D67E8009533C9 /* HobbiesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

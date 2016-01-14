@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RunningViewController.swift
 //  SelfIntro
 //
 //  Created by Burnett, Jordan on 1/6/16.
@@ -8,14 +8,13 @@
 
 import UIKit
 
-class ViewController : UIViewController
+class FutureViewController : UIViewController
 {
     
-    @IBAction func toSchoolChange(sender: UIButton)
+    @IBAction func toFamilyChange(sender: UIButton)
     {
-        performSegueWithIdentifier("toSchool", sender: sender)
+        performSegueWithIdentifier("toHobbies", sender: sender)
     }
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -27,6 +26,4 @@ class ViewController : UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
-

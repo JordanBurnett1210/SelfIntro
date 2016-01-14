@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Food View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Food View" id="BYZ-38-t0r" customClass="ViewController" customModule="SelfIntro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,201 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1X-cm-bL2">
+                                <rect key="frame" x="266" y="550" width="68" height="30"/>
+                                <state key="normal" title="To School"/>
+                                <connections>
+                                    <action selector="toSchoolChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F3k-1F-cSd"/>
+                                    <segue destination="HpH-oz-2hI" kind="popoverPresentation" identifier="toSchool" popoverAnchorView="F1X-cm-bL2" id="2px-0h-AhI">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheesecake" translatesAutoresizingMaskIntoConstraints="NO" id="LBU-eB-8wm">
+                                <rect key="frame" x="0.0" y="0.0" width="605" height="292"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pk-wL-Y0m">
+                                <rect key="frame" x="0.0" y="295" width="600" height="247"/>
+                                <string key="text">I enjoy a great variety of food. I would have to say that my favorite food is cheesecake.  If you were to say that cheesecake is a dessert, and does not count, I would have to say chicken cordon bleu is my favorite food. But raspberry cheesecake.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="321" y="389"/>
+        </scene>
+        <!--Hobbies View-->
+        <scene sceneID="WPV-22-kYa">
+            <objects>
+                <viewController title="Hobbies View" id="0Id-ab-0zb" customClass="HobbiesViewController" customModule="SelfIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NZr-ih-NRc"/>
+                        <viewControllerLayoutGuide type="bottom" id="bR3-SS-Yr1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CR7-WW-a2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uim-oK-KAv">
+                                <rect key="frame" x="268" y="550" width="65" height="30"/>
+                                <state key="normal" title="To Family"/>
+                                <connections>
+                                    <action selector="toFamilyChange:" destination="0Id-ab-0zb" eventType="touchUpInside" id="hJf-PV-jXg"/>
+                                    <segue destination="x95-ug-tDy" kind="popoverPresentation" identifier="toFamily" popoverAnchorView="uim-oK-KAv" id="9t9-2f-iR7">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GrandPiano" translatesAutoresizingMaskIntoConstraints="NO" id="9Q6-C0-Sxs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="283"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ic2-e0-Sxk">
+                                <rect key="frame" x="0.0" y="284" width="600" height="258"/>
+                                <string key="text">My several hobbies include piano, reading, video games, and tai kwan do. I have done piano for the past 9 years, most of that time not of my own volition. I have since grown to enjoy it on rare occasions.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlX-lB-PIp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="1127"/>
+        </scene>
+        <!--Family View-->
+        <scene sceneID="Hho-nd-hPG">
+            <objects>
+                <viewController title="Family View" id="x95-ug-tDy" customClass="FamilyViewController" customModule="SelfIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eWv-Bq-P2d"/>
+                        <viewControllerLayoutGuide type="bottom" id="LpA-ef-xEb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PlR-ZG-kev">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJu-sg-zVY">
+                                <rect key="frame" x="272" y="550" width="56" height="30"/>
+                                <state key="normal" title="To Food"/>
+                                <connections>
+                                    <action selector="toFoodChange:" destination="x95-ug-tDy" eventType="touchUpInside" id="Bkk-p7-dhk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brace Yourselves" translatesAutoresizingMaskIntoConstraints="NO" id="sEp-iL-qX9">
+                                <rect key="frame" x="168" y="0.0" width="264" height="292"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnf-eP-HTF">
+                                <rect key="frame" x="0.0" y="300" width="600" height="255"/>
+                                <string key="text">There are five people in my family. Going from oldest to youngest, they are my Mom, my Dad, myself, my sister Sarah, and my sister Katie. I do not always get along with all of them, but I like to think that I try my best.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toFood" id="f1I-gO-0EB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfn-tY-v9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-473" y="1802"/>
+        </scene>
+        <!--School View-->
+        <scene sceneID="VWo-uG-0dE">
+            <objects>
+                <viewController title="School View" id="HpH-oz-2hI" customClass="SchoolViewController" customModule="SelfIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qDZ-zF-61r"/>
+                        <viewControllerLayoutGuide type="bottom" id="O1b-sV-23e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="taK-e5-fG5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cz-Ad-ehw">
+                                <rect key="frame" x="268" y="550" width="65" height="30"/>
+                                <state key="normal" title="To Future"/>
+                                <connections>
+                                    <action selector="changeToFuture:" destination="HpH-oz-2hI" eventType="touchUpInside" id="cgW-JL-Czb"/>
+                                    <segue destination="Swx-Lj-IoU" kind="popoverPresentation" identifier="toFuture" popoverAnchorView="7cz-Ad-ehw" id="UV8-I7-6iZ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calculous" translatesAutoresizingMaskIntoConstraints="NO" id="4Pm-LH-1rj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="292"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eph-H4-gmn">
+                                <rect key="frame" x="0.0" y="295" width="600" height="258"/>
+                                <string key="text">Other than my CTEC classes, I am taking BC calculous, AP human government, AP literature, and ceramics. (Vector=Calculous... get it?) I hate my homework load.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M3K-Ld-DnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="389"/>
+        </scene>
+        <!--Future View-->
+        <scene sceneID="aNk-5W-0am">
+            <objects>
+                <viewController title="Future View" id="Swx-Lj-IoU" customClass="FutureViewController" customModule="SelfIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SOO-tu-MGT"/>
+                        <viewControllerLayoutGuide type="bottom" id="FZ8-Or-lsJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ac3-iO-SG1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpA-68-axG">
+                                <rect key="frame" x="261" y="550" width="78" height="30"/>
+                                <state key="normal" title="To Hobbies"/>
+                                <connections>
+                                    <action selector="toFamilyChange:" destination="Swx-Lj-IoU" eventType="touchUpInside" id="Rwc-RV-JSW"/>
+                                    <segue destination="0Id-ab-0zb" kind="popoverPresentation" identifier="toHobbies" popoverAnchorView="GpA-68-axG" id="Msh-q8-cS8">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MITlogo (1)" translatesAutoresizingMaskIntoConstraints="NO" id="ArF-fn-H9S">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="285"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzH-MT-yh5">
+                                <rect key="frame" x="0.0" y="293" width="600" height="259"/>
+                                <string key="text">Other than my CTEC classes, I am taking BC calculous, AP human government, AP literature, and ceramics. (Vector=Calculous... get it?) I hate my homework load.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9AB-dC-0qH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="1127"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Brace Yourselves" width="266" height="400"/>
+        <image name="GrandPiano" width="3295" height="2823"/>
+        <image name="MITlogo (1)" width="2800" height="1574"/>
+        <image name="calculous" width="1440" height="900"/>
+        <image name="cheesecake" width="3008" height="2000"/>
+    </resources>
 </document>
